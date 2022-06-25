@@ -748,7 +748,7 @@ namespace quanlybangiay
                                 }
 
                                 foreach (DataGridViewRow i in dtGV_Trangchu.Rows)
-                                {
+                                {   
 
                                     string IDGiay = i.Cells["Mã giày"].Value.ToString();
                                     int Soluong = Convert.ToInt32(i.Cells["SL"].Value.ToString());

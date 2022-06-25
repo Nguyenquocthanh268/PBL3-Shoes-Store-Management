@@ -114,8 +114,14 @@ namespace quanlybangiay.form
         }
         private void butOK_Click(object sender, EventArgs e)
         {
-            LoadData();
-
+            if(dtStartday.Value < dtEndday.Value)
+            {
+                LoadData();
+            }
+            else
+            {
+                MessageBox.Show("Khoảng thời gian không hợp lệ, vui lòng kiểm tra lại ...");
+            }
         }
         private void butTuyChinh_Click(object sender, EventArgs e)
         {
